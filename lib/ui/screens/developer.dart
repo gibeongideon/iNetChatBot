@@ -141,8 +141,7 @@ class _HomePageState extends State<DeveloperInfo> {
                   ),
                   GestureDetector(
                     onTap: () {
-                      modelsProvider.webContact(
-                          "https://www.linkedin.com/in/kipngeno-gibeon-27b9765a/");
+                      modelsProvider.webContact("https://www.linkedin.com/in/kipngeno-gibeon-27b9765a/");
                     },
                     child: Container(
                       padding: const EdgeInsets.all(4),
