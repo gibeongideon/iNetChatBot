@@ -5,23 +5,23 @@ import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:chatbot/utils/constants/constants.dart';
+import 'package:chatbot/ui/screens/text_chat.dart';
+import 'package:chatbot/ui/screens/gallery.dart';
+import 'package:chatbot/ui/screens/splash_screen.dart';
 import 'package:chatbot/data/providers/chats_provider.dart';
 import 'package:chatbot/data/providers/models_provider.dart';
 import 'package:chatbot/ui/screens/developer.dart';
 import 'package:chatbot/ui/screens/home_page.dart';
-import 'package:chatbot/ui/screens/text_chat.dart';
-import 'package:chatbot/ui/screens/gallery.dart';
-import 'package:chatbot/ui/screens/splash_screen.dart';
 import 'services/tts_functions.dart';
 import 'package:chatbot/ui/screens/image_creater.dart';
 import 'package:chatbot/ui/screens/voice_chat.dart';
 import 'package:chatbot/ui/widgets/drawer_widget.dart';
 
-bool? seenOnBoard;
+bool? shownOnBoard;
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  HttpOverrides.global = MyHttpOverrides();
+  HttpOverrides.global = ChatHttpOverrides();
   TextToSpeech.initTTS();
 
   // to show status bar
@@ -31,13 +31,13 @@ void main() async {
   );
 
   SharedPreferences pref = await SharedPreferences.getInstance();
-  seenOnBoard = pref.getBool('ON_BOARDING') ?? true;
+  shownOnBoard = pref.getBool('ON_BOARDING') ?? true;
 
-  runApp(const MyApp());
+  runApp(const ChatApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class ChatApp extends StatelessWidget {
+  const ChatApp({super.key});
 
   // This widget is the root of your application.
   @override
@@ -77,7 +77,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class MyHttpOverrides extends HttpOverrides {
+class ChatHttpOverrides extends HttpOverrides {
   @override
   HttpClient createHttpClient(SecurityContext? context) {
     return super.createHttpClient(context)
