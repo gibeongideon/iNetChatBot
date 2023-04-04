@@ -48,7 +48,7 @@ class _VoiceChatBotState extends State<VoiceChatBot> {
           child: GestureDetector(
             onTapDown: (details) async {
               if (!isListening) {
-                text = "Listening...";
+                text = "Listening...Say something!";
                 var available = await speechToText.initialize();
                 if (available) {
                   setState(() {
