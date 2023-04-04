@@ -1,0 +1,9 @@
+Simple ,Beautifu and minimal personal assistant app that uses the OpenAI API. (Requires Android 6.0 or later)
+
+
+Features
+
+* Beautiful and minimal UI
+* Voice chat Assistant
+* Text chat Assistant
+* AI Image Generator

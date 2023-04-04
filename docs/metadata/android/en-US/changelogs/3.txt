@@ -1,0 +1,4 @@
+* Add Image Generator with share button to \social appom
+* Home page make elegant with adjustement in color contrast to make it more clear
+
+Bug fixes and improvements.
