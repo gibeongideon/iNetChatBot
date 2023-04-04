@@ -79,7 +79,7 @@ class _MainDrawerState extends State<MainDrawer> {
             title: const Text('Creative Image Generator'),
           ),
           ListTile(
-            onTap: () => Navigator.pushNamed(context, MyGallery.routeName),
+            onTap: () => Navigator.pushNamed(context, Gallery.routeName),
             leading: const Icon(
               Icons.photo_library,
             ),

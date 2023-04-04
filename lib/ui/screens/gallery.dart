@@ -6,21 +6,21 @@ import 'package:flutter/material.dart';
 import '../widgets/drawer_widget.dart';
 import '../widgets/text_widget.dart';
 
-class MyGallery extends StatefulWidget {
+class Gallery extends StatefulWidget {
   static const String routeName = '/gallery';
-  const MyGallery({Key? key}) : super(key: key);
+  const Gallery({Key? key}) : super(key: key);
 
   @override
-  State<MyGallery> createState() => _MyGalleryState();
+  State<Gallery> createState() => _GalleryState();
 }
 
-class _MyGalleryState extends State<MyGallery> {
+class _GalleryState extends State<Gallery> {
   List imgList = [];
 
   getImages() async {
     final directory = Directory("storage/emulated/0/AI Image Gallery");
     imgList = directory.listSync();
-    print(imgList);
+    //print(imgList);
   }
 
   popImage(filePath) {

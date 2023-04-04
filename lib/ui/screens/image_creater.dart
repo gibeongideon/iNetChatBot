@@ -143,10 +143,8 @@ class _ImageGeneratorState extends State<ImageGenerator> {
                   backgroundColor: const Color(0xFFE0E0FF),
                 ),
                 onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const MyGallery()));
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const Gallery()));
                 },
                 child: const Text(
                   "My Arts",

@@ -12,7 +12,7 @@ import 'package:chatbot/data/providers/chats_provider.dart';
 import 'package:chatbot/data/providers/models_provider.dart';
 import 'package:chatbot/ui/screens/developer.dart';
 import 'package:chatbot/ui/screens/home_page.dart';
-import 'services/tts_functions.dart';
+import 'services/textspeech_tts.dart';
 import 'package:chatbot/ui/screens/image_creater.dart';
 import 'package:chatbot/ui/screens/voice_chat.dart';
 import 'package:chatbot/ui/widgets/drawer_widget.dart';
@@ -39,7 +39,7 @@ void main() async {
 class ChatApp extends StatelessWidget {
   const ChatApp({super.key});
 
-  // This widget is the root of your application.
+  // This widget is the root of the application.
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
@@ -59,7 +59,6 @@ class ChatApp extends StatelessWidget {
           appBarTheme: AppBarTheme(
             color: cardColor,
           ),
-          //primarySwatch: Colors.blue,
         ),
         initialRoute: SplashScreen.routeName,
         routes: {
@@ -70,7 +69,7 @@ class ChatApp extends StatelessWidget {
           ImageGenerator.routeName: (_) => const ImageGenerator(),
           ChatScreen.routeName: (_) => const ChatScreen(),
           VoiceChatBot.routeName: (_) => const VoiceChatBot(),
-          MyGallery.routeName: (_) => const MyGallery(),
+          Gallery.routeName: (_) => const Gallery(),
         },
       ),
     );
