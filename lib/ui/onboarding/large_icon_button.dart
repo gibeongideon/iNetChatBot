@@ -29,10 +29,7 @@ class LargeIconButton extends StatelessWidget {
             ),
             Expanded(
               flex: 1,
-              child: Container(
-                // height: 25,
-                child: Image.asset(iconImage),
-              ),
+              child: Image.asset(iconImage),
             ),
             const SizedBox(
               width: 20,

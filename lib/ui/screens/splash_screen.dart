@@ -88,7 +88,7 @@ class _SplashScreenState extends State<SplashScreen> {
                             spreadRadius: 1),
                       ]),
                   child: Image.asset(
-                    'assets/images/Next_Digit.png',
+                    'assets/images/Africa.png',
                     width: 110,
                   )),
             ],

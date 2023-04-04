@@ -56,7 +56,7 @@ class _VoiceChatBotState extends State<VoiceChatBot> {
                     speechToText.listen(onResult: (result) {
                       setState(() {
                         text = result.recognizedWords;
-                        print("============> $text");
+                        //print("============> $text");
                       });
                     });
                   });
@@ -74,7 +74,7 @@ class _VoiceChatBotState extends State<VoiceChatBot> {
                   text != "Listening...") {
                 messages
                     .add(ChatMessage(text: text, type: ChatMessageType.user));
-                print("<<<----Your Voice---->>>: $text");
+                //print("<<<----Your Voice---->>>: $text");
                 var msg = await ApiServices.sendMessage(text);
                 msg = msg.trim();
 
@@ -87,10 +87,9 @@ class _VoiceChatBotState extends State<VoiceChatBot> {
                   TextToSpeech.speak(msg);
                 });
               } else {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(
-                      content: Text("Failed to process. Try again!")),
-                );
+                // ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(content: Text("Failed to process. Try again!"));
+                // );
               }
             },
             child: CircleAvatar(
@@ -153,7 +152,7 @@ class _VoiceChatBotState extends State<VoiceChatBot> {
           backgroundColor: const Color(0xFFF52887),
           child: type == ChatMessageType.bot
               ? Image.asset('assets/images/ChatGPT-Logo1.png')
-              : Icon(
+              : const Icon(
                   Icons.person,
                   color: Colors.white,
                 ),
@@ -189,4 +188,3 @@ class _VoiceChatBotState extends State<VoiceChatBot> {
     );
   }
 }
-//0xFF00A67E
