@@ -83,8 +83,7 @@ flutter:
      - assets/images/dribbble.gif
      - assets/images/linkedin.png
      - assets/images/github.png
-     - assets/images/Next_Digit-Logo.png
-     - assets/images/Next_Digit.png
+     - assets/images/Africa.png
      - assets/images/openai_logo.jpg
      - assets/images/male.png
      - assets/images/giphy.gif
@@ -100,7 +99,6 @@ flutter:
      - assets/images/robo_small.gif
      - assets/images/splash_image.png
      - assets/images/user.jpg
-     - assets/images/voicechat.gif
      - assets/images/voice_chat.gif
      - assets/images/chat_logo.png
      
