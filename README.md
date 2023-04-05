@@ -18,15 +18,14 @@ Elegant & minimal voice & text chat app assistant.It has additional AI Image gen
 
 ## Download
 
-
 Download [here](https://github.com/gibeongideon/inetChatbot/releases) or get it on `PlayStore`
 
-<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" height="75">
-
-## TODO
+## Future work & Features to add
 
 - i18n support for multiple languages
-- Switch from provider state management to Bloc 
+- Add user login after onboarding
+- Add subscription to monetize the app
+- Switch from provider state management to Bloc state management
 - Optimize and refuctor the code to minimize code base
 
 ## Acknowledgments
