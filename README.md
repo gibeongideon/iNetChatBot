@@ -7,7 +7,7 @@ Elegant & minimal voice & text chat app assistant.It has additional AI Image gen
 
 ## SreenShots
 
-<img src="./docs/metadata/android/en-US/images/screenshots/onboard_01.png" alt="Simple OnBoarding, minimal UI" height="400" width="200"> <img src="./docs/metadata/android/en-US/images/screenshots/voice_chat_1.png" alt="gpt voice chat assistant" height="400" width="200"> <img src="./docs/metadata/android/en-US/images/screenshots/text_chat_1.png" alt="gpt text chat assistant" height="400" width="200"> <img src="./docs/metadata/android/en-US/images/screenshots/imagegen_1.png" alt="OpenAi Image Generator" height="400" width="200">
+<img src="./docs/metadata/android/en-US/images/screenshots/onboard_01.jpg" alt="Simple OnBoarding, minimal UI" height="400" width="200"> <img src="./docs/metadata/android/en-US/images/screenshots/voice_chat_1.png" alt="gpt voice chat assistant" height="400" width="200"> <img src="./docs/metadata/android/en-US/images/screenshots/text_chat_1.jpg" alt="gpt text chat assistant" height="400" width="200"> <img src="./docs/metadata/android/en-US/images/screenshots/imagegen_1.jpg" alt="OpenAi Image Generator" height="400" width="200">
 
 ## Features
 
