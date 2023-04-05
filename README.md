@@ -2,7 +2,7 @@
 
 Elegant & minimal voice & text chat app assistant.It has additional AI Image generator.The chat fuctionalities is powered bay OpenAi ChatGPT.
 
-Requires Android 6.0 or later)
+(Requires Android 6.0 or later)
 
 
 ## SreenShots
@@ -19,6 +19,3 @@ Requires Android 6.0 or later)
 ## Download
 
 Download [here](https://github.com/gibeongideon/inetChatbot/releases) or get it on `PlayStore`
-
-<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" height="75">
-
