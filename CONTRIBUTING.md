@@ -1,4 +1,4 @@
-##INETCHATBOT APP
+##INET A-ssistant app
 
 # Contributing
 
