@@ -10,7 +10,7 @@ class OnBoarding {
 
 List<OnBoarding> onboardingContents = [
   OnBoarding(
-    title: 'Welcome to\n iNet-Africa-Assistant',
+    title: 'Welcome to\n iNet A-ssistant',
     image: 'assets/images/chatbot.gif',
   ),
   OnBoarding(

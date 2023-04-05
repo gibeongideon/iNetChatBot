@@ -87,10 +87,10 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                             style: TextStyle(
                               color: kPrimaryColor,
                             )),
-                        TextSpan(text: 'ON ANYTHING YOU'),
-                        TextSpan(text: 'NEED AN'),
+                        TextSpan(text: 'ON ANYTHING'),
+                        TextSpan(text: 'YOU'),
                         TextSpan(
-                          text: 'ANSWER ',
+                          text: 'NEED ',
                           style: TextStyle(
                             color: kPrimaryColor,
                           ),

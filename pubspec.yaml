@@ -74,6 +74,7 @@ flutter:
   assets:
      - assets/images/chatbot.gif
      - assets/images/bot-3.png
+     - assets/images/bot-5.gif
      - assets/images/voice_chat.gif
      - assets/images/App_logo.png
      - assets/images/gidi.jpeg

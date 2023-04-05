@@ -22,7 +22,7 @@
 <!--    android:preserveLegacyExternalStorage="true"-->
 
     <application
-        android:label="iNetABot"
+        android:label="iNet A-sistant"
         android:name="${applicationName}"
         android:icon="@mipmap/launcher_icon"
         android:requestLegacyExternalStorage="true">
