@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 import 'package:chatbot/main.dart';
-import '../onboarding/onboarding_page.dart';
+import '../onboard/onboarding_page.dart';
 import 'home_page.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -22,8 +22,9 @@ class _SplashScreenState extends State<SplashScreen> {
       Navigator.pushReplacement(
           context,
           MaterialPageRoute(
-            builder: (context) =>
-                seenOnBoard == true ? const OnBoardingPage() : const HomePage(),
+            builder: (context) => shownOnBoard == true
+                ? const OnBoardingPage()
+                : const HomePage(),
           ));
     });
     super.initState();
@@ -87,7 +88,7 @@ class _SplashScreenState extends State<SplashScreen> {
                             spreadRadius: 1),
                       ]),
                   child: Image.asset(
-                    'assets/images/Next_Digit.png',
+                    'assets/images/Africa.png',
                     width: 110,
                   )),
             ],

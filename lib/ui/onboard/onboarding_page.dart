@@ -7,7 +7,6 @@ import 'onboard_nav_btn.dart';
 import 'onboard_data.dart';
 import 'size_configs.dart';
 
-
 class OnBoardingPage extends StatefulWidget {
   const OnBoardingPage({Key? key}) : super(key: key);
 
@@ -56,7 +55,9 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
               itemCount: onboardingContents.length,
               itemBuilder: (context, index) => Column(
                 children: [
-                  SizedBox(height: sizeV * 5,),
+                  SizedBox(
+                    height: sizeV * 5,
+                  ),
                   Text(
                     onboardingContents[index].title,
                     style: kTitle,
@@ -82,14 +83,14 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                       children: const [
                         TextSpan(text: 'WE CAN '),
                         TextSpan(
-                            text: 'HELP YOU ',
+                            text: 'ASSIST YOU ',
                             style: TextStyle(
                               color: kPrimaryColor,
                             )),
-                        TextSpan(text: 'TO BE A BETTER '),
-                        TextSpan(text: 'VERSION OF '),
+                        TextSpan(text: 'ON ANYTHING YOU'),
+                        TextSpan(text: 'NEED AN'),
                         TextSpan(
-                          text: 'YOURSELF ',
+                          text: 'ANSWER ',
                           style: TextStyle(
                             color: kPrimaryColor,
                           ),
@@ -150,9 +151,6 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool('ON_BOARDING', false);
     Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(builder: (context) => const HomePage()));
+        context, MaterialPageRoute(builder: (context) => const HomePage()));
   }
-
 }
-

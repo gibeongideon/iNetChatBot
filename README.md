@@ -19,3 +19,16 @@ Elegant & minimal voice & text chat app assistant.It has additional AI Image gen
 ## Download
 
 Download [here](https://github.com/gibeongideon/inetChatbot/releases) or get it on `PlayStore`
+
+<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" height="75">
+
+## TODO
+
+- i18n support for multiple languages
+- Switch from provider state management to Bloc 
+- Optimize and refuctor the code to minimize code base
+
+## Acknowledgments
+
+- [OpenAi Icon](url)
+- [App Mockup](https://app-mockup.com), [photopea](http://photopea.com)
