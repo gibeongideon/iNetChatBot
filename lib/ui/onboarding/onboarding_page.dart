@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../screens/home_page.dart';
-import 'app_styles.dart';
-import 'my_text_button.dart';
-import 'onboard_nav_btn.dart';
-import 'onboard_data.dart';
-import 'size_configs.dart';
+import './utils/app_styles.dart';
+import './utils/my_text_button.dart';
+import './utils/onboard_nav_btn.dart';
+import './utils/onboard_data.dart';
+import './utils/size_configs.dart';
 
 class OnBoardingPage extends StatefulWidget {
   const OnBoardingPage({Key? key}) : super(key: key);
