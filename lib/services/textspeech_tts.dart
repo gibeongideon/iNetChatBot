@@ -4,18 +4,10 @@ class TextToSpeech {
   static FlutterTts tts = FlutterTts();
 
   static initTTS() async {
-
-    // var response = await tts.getLanguages;
-    // print("All Language: $response");
-
     tts.setLanguage("en-US");
-    // tts.setPitch(1.0);
-    // tts.setSpeechRate(0.0);
-    // tts.setVolume(1.0);
   }
 
   static speak(String text) async {
-
     tts.setStartHandler(() {
       print("===> TTS IS STARTED:");
     });
@@ -30,5 +22,4 @@ class TextToSpeech {
 
     tts.speak(text);
   }
-
 }

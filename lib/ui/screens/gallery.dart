@@ -20,7 +20,6 @@ class _GalleryState extends State<Gallery> {
   getImages() async {
     final directory = Directory("storage/emulated/0/AI Image Gallery");
     imgList = directory.listSync();
-    //print(imgList);
   }
 
   popImage(filePath) {
@@ -31,11 +30,9 @@ class _GalleryState extends State<Gallery> {
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Container(
-                //clipBehavior: Clip.antiAlias,
                 width: 300,
                 height: 300,
                 decoration: BoxDecoration(
-                  //color: Colors.white,
                   borderRadius: BorderRadius.circular(12),
                   color: const Color(0xFFCCCCFF),
                   boxShadow: [
@@ -68,13 +65,13 @@ class _GalleryState extends State<Gallery> {
           Navigator.pop(context);
         });
 
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: TextWidget(
-              label: "Deleted successfully!",
-            ),
-            backgroundColor: Colors.deepOrangeAccent,
+        //ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: TextWidget(
+            label: "Deleted successfully!",
           ),
+          backgroundColor: Colors.deepOrangeAccent,
+          // ),
         );
       }
     } catch (e) {
