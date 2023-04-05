@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 import 'package:chatbot/main.dart';
-import '../onboard/onboarding_page.dart';
+import '../onboarding/onboarding_page.dart';
 import 'home_page.dart';
 
 class SplashScreen extends StatefulWidget {
