@@ -1,5 +1,5 @@
+// Import necessary packages and libraries
 import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
@@ -17,31 +17,43 @@ import 'package:chatbot/ui/screens/image_creater.dart';
 import 'package:chatbot/ui/screens/voice_chat.dart';
 import 'package:chatbot/ui/widgets/drawer_widget.dart';
 
+// Define a boolean variable to check if the onboarding screen has been shown
 bool? shownOnBoard;
 
+// Main function, called when the app starts
 void main() async {
+  // Ensure Flutter bindings are initialized
   WidgetsFlutterBinding.ensureInitialized();
+
+  // Set up an HttpOverrides instance to bypass certificate checks
   HttpOverrides.global = ChatHttpOverrides();
+
+  // Initialize text-to-speech functionality
   TextToSpeech.initTTS();
 
-  // to show status bar
+  // Show the system status bar
   SystemChrome.setEnabledSystemUIMode(
     SystemUiMode.manual,
     overlays: [SystemUiOverlay.bottom, SystemUiOverlay.top],
   );
 
+  // Load saved preferences
   SharedPreferences pref = await SharedPreferences.getInstance();
+
+  // Get the value of 'ON_BOARDING' preference, if not found, use default value true
   shownOnBoard = pref.getBool('ON_BOARDING') ?? true;
 
+  // Start the app
   runApp(const ChatApp());
 }
 
+// Root widget of the app
 class ChatApp extends StatelessWidget {
   const ChatApp({super.key});
 
-  // This widget is the root of the application.
   @override
   Widget build(BuildContext context) {
+    // Wrap multiple ChangeNotifierProvider widgets with MultiProvider widget
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(
@@ -51,15 +63,20 @@ class ChatApp extends StatelessWidget {
           create: (_) => ChatProvider(),
         ),
       ],
+      // Define the MaterialApp widget
       child: MaterialApp(
+        // Hide the debug banner
         debugShowCheckedModeBanner: false,
+        // Set the app title
         title: 'iNet Africa Assistant',
+        // Set the app theme
         theme: ThemeData(
           scaffoldBackgroundColor: scaffoldBackgroundColor,
           appBarTheme: AppBarTheme(
             color: cardColor,
           ),
         ),
+        // Define the app's routes
         initialRoute: SplashScreen.routeName,
         routes: {
           SplashScreen.routeName: (_) => const SplashScreen(),
@@ -76,6 +93,7 @@ class ChatApp extends StatelessWidget {
   }
 }
 
+// HttpOverrides instance to bypass certificate checks
 class ChatHttpOverrides extends HttpOverrides {
   @override
   HttpClient createHttpClient(SecurityContext? context) {

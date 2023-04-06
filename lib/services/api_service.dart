@@ -9,6 +9,7 @@ import 'package:chatbot/data/models/chat_model.dart';
 import 'package:chatbot/data/models/main_model.dart';
 
 //====================Voice ChatBOT=====================
+
 class ApiServices {
   static Map<String, String> header = {
     'Content-Type': 'application/json',
@@ -34,7 +35,7 @@ class ApiServices {
       var msg = data['choices'][0]['text'];
       return msg;
     } else {
-      print("Failed to fetch data");
+      //print("Failed to fetch data");
     }
   }
 }
