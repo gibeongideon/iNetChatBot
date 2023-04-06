@@ -1,11 +1,11 @@
 # Inet A-ssistant 
 
-Elegant & minimal voice & text chat app assistant.It has additional AI Image generator.The chat fuctionalities is powered bay OpenAi ChatGPT.
+Elegant & minimal voice & text chat app assistant.It has additional AI Image generator.The chat fuctionalities is powered by OpenAi ChatGPT.
 
 (Requires Android 6.0 or later)
 
 
-## SreenShots
+## ScreenShots
 
 <img src="./docs/metadata/android/en-US/images/screenshots/onboard_01.jpg" alt="Simple OnBoarding, minimal UI" height="400" width="200"> <img src="./docs/metadata/android/en-US/images/screenshots/welcome.jpg" alt="gpt voice chat assistant" height="400" width="200"> <img src="./docs/metadata/android/en-US/images/screenshots/home.jpg" alt="gpt text chat assistant" height="400" width="200"> <img src="./docs/metadata/android/en-US/images/screenshots/voice_chat_1.png" alt="OpenAi Image Generator" height="400" width="200"><img src="./docs/metadata/android/en-US/images/screenshots/text_chat_1.jpg" alt="Simple OnBoarding, minimal UI" height="400" width="200"> <img src="./docs/metadata/android/en-US/images/screenshots/ai.jpg" alt="gpt voice chat assistant" height="400" width="200"> <img src="./docs/metadata/android/en-US/images/screenshots/code.jpg" alt="gpt text chat assistant" height="400" width="200"> <img src="./docs/metadata/android/en-US/images/screenshots/image.jpg" alt="OpenAi Image Generator" height="400" width="200">
 
