@@ -35,7 +35,7 @@ class ApiServices {
       var msg = data['choices'][0]['text'];
       return msg;
     } else {
-      //print("Failed to fetch data");
+      // print("Failed to fetch data");
     }
   }
 }
@@ -188,7 +188,7 @@ class Api {
       var imageUrl = data['data'][0]['url'].toString();
       return imageUrl;
     } else {
-      print("Failed to fetch image");
+      //print("Failed to fetch image");
     }
   }
 }
